@@ -1,0 +1,356 @@
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.75rem;
+}
+
+.sidebar {
+    background-color: black;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: 0.75rem 0.75rem 0 0;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 0.4rem;
+    overflow: auto;
+    margin-top: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.8;
+    margin-left: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.home {
+    opacity: 1;
+}
+
+.nav-option:hover {
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 0.4rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    padding-right: 1.2rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+
+.lib-option {
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+}
+
+.box {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.25rem 0rem 1.25rem;
+    height: 8.1rem;
+    background-color: #232323;
+    border-radius: 0.4rem;
+}
+
+.box-p1 {
+    font-weight: 700;
+    line-height: 0.6rem;
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    line-height: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+}
+
+.two {
+    margin-top: 1.5rem;
+    height: 10.25rem;
+}
+
+.two .box-p2 {
+    line-height: 0.6rem;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 1.5rem;
+    height: 3.5rem;
+    z-index: 1000;
+}
+
+.sticky-right button {
+    margin-right: 0.5rem;
+}
+
+span {
+    margin-left: 0.2rem;
+}
+
+@media (max-width: 950px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+    .info {
+        white-space: wrap;
+    }
+}
+
+.card {
+    background-color: #232323;
+    width: 160px;
+    height: 240px;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-weight: 600;
+    line-height: 0.35rem;
+}
+
+.info {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    line-height: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-left: 1.5rem;
+    line-height: 1.2rem;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 95%;
+    height: 60%;
+    border-top: 0.0625rem solid white;
+    opacity: 0.4;
+}
+
+.music-player {
+    background-color: black;
+    height: 5.5rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.music-player-left {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.95;
+}
+
+.music-player-left img {
+    border-radius: 0.2rem;
+    height: 70%;
+}
+
+.para {
+    margin-left: 1.2rem;
+}
+
+.music-player-left i {
+    margin-left: 1.2rem;
+}
+
+.song-name {
+    font-size: 0.85rem;
+    line-height: 0.6rem;
+    font-family: "Poppins", sans-serif;
+    opacity: 0.95;
+    line-height: 0.25rem;
+}
+
+.singer {
+    font-size: 0.7rem;
+    opacity: 0.75;
+    font-family: "Poppins", sans-serif;
+    line-height: 0.25rem;
+}
+
+.player-center-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.player-center-top img {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    opacity: 0.8;
+}
+
+.music-player-bottom {
+    display: flex;
+    align-items: baseline;
+}
+
+.progress-bar {
+    width: 20rem;
+    margin-top: 0.5rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -7px;
+}
+
+.player-icon {
+    height: 1rem;
+    cursor: pointer;
+}
+
+span {
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.music-player-right {
+    color: white;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+}
+
+.music-player-right i {
+    margin-left: 1rem;
+}
+
+.music-player-right input {
+    margin-left: 0.5rem;
+}
+
+.new {
+    width: 7rem;
+    margin-bottom: 0.6rem;
+}
